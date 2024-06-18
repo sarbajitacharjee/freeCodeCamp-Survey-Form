@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+     body {
+        background-image: linear-gradient(
+            115deg,
+            rgba(58, 58, 158, 0.8),
+            rgba(136, 136, 206, 0.7)
+          ),
+          url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        font-size: 20px;
+        padding: 350px;
+       font-family: 'Poppins', sans-serif; 
+      }
+      
+      .form-box {
+        width: 600px;
+        background-color: #1b1b32d4;
+        color: white;
+        padding: 53px;
+        
+      }
+
+      label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    
+}
+h4{
+  margin: 0;
+  margin-bottom: 30px;
+}
+#commennt{
+  margin-top: 30px;
+}
+#comments{
+  height: 160px;
+
+}
+
+
+#submit{
+  background-color: rgba(2, 164, 2, 0.8);
+  width: 104%;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;}
+    </style>
+  </head>
+  <body>
+    <h2 class="firstth1">freeCodeCamp Survey Form
+    </h2>
+    <h4>Thank you for taking the time to help us improve the platform
+
+    </h4>
+    <div class="form-box">
+      <form id="survey-form">
+        <label id="name-label" for="name">Name:</label> 
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+        
+        
+        <label id="email-label" for="email">Email:</label>
+        
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label id="number-label" for="number">Age:</label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          min="1"
+          max="120"
+          placeholder="Enter your age"
+          required
+        />
+        
+        <label for="dropdown">Which option best describes your current role?
+
+        </label>
+        <select id="dropdown" name="options">
+          <option value="option1">Select an Option</option>
+          <option value="option1">Student 1</option>
+          <option value="option2">Employee 2</option>
+        </select>
+        
+        <p>Would you recommend freeCodeCamp to a friend?
+          
+        </p>
+        <label>
+          <input type="radio" name="gender" value="male" required /> Definitely
+          
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" /> May be
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" /> Not Sure
+        </label>
+        <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+        <select id="dropdown" name="options">
+          <option value="option1">Select an Option</option>
+          <option value="option1">Challenges</option>
+          <option value="option2">Projects</option>
+          <option value="option2">Open Source</option>
+        </select>
+        
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label>
+          <input type="checkbox" name="interests" value="coding" /> Front-end Projects
+
+        </label>
+        <label>
+          <input type="checkbox" name="interests" value="reading" /> Backend projects
+        </label>
+        <label>
+          <input type="checkbox" name="interests" value="reading" /> Community post
+        </label>
+        <label>
+          <input type="checkbox" name="interests" value="reading" /> City Meetup
+        </label>
+        <label>
+          <input type="checkbox" name="interests" value="reading" /> Wiki
+        </label>
+          <input type="checkbox" name="interests" value="reading" /> Videos
+          <label id="commennt" for="comments">Additional comments:
+    </label>
+          <textarea
+        id="comments"
+        name="comments"
+        placeholder="Enter your comments here"
+        ></textarea>
+        
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  </html>
+  
